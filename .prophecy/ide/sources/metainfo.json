@@ -1,0 +1,69 @@
+{
+  "name" : "HelloWorld_SQL",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "fabricId" : "120",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "main",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "orders2",
+    "type" : "Model",
+    "syncedOnce" : false
+  }, {
+    "name" : "stg_customers",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_orders",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "stg_payments",
+    "type" : "Model",
+    "syncedOnce" : true
+  } ],
+  "frontEndLanguage" : "sql"
+}

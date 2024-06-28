@@ -1,0 +1,896 @@
+{
+  "id" : "ref_int_orders_customers_2",
+  "metainfo" : {
+    "label" : "ref_int_orders_customers_2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "Xh3WzYIJueEr45fcZcze_$$UKAZPUCKXXm-gS_twgreo" : {
+      "id" : "Xh3WzYIJueEr45fcZcze_$$UKAZPUCKXXm-gS_twgreo",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -140,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ "cyGUn7JYMWUvOmLuHend6$$fvs6nOvmsJpamMDso-hCU##customer_id0" ],
+        "condition" : {
+          "expression" : "customer_id0 is null"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cyGUn7JYMWUvOmLuHend6$$fvs6nOvmsJpamMDso-hCU",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "Join_1"
+        } ],
+        "outputs" : [ {
+          "id" : "OCsoisND2BrRk_U5sVLyW$$1yK5MFRDSKAADkwpGaw55",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "lWzHuUfCp5tWteuDc0FQA" : {
+      "id" : "lWzHuUfCp5tWteuDc0FQA",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "customers",
+        "slug" : "customers",
+        "x" : -540,
+        "y" : 60,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "customers",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "FTZZ-Ku-kkcGrJEiyDqvZ",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "j22JL5-0bOKdfgASf-PZD" : {
+      "id" : "j22JL5-0bOKdfgASf-PZD",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "orders",
+        "slug" : "orders",
+        "x" : -540,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "orders",
+          "sourceType" : "Model",
+          "alias" : ""
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "veDTlt2LIattN-Kn2K2Os",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "ref_int_orders_customers_2##ACYhY0ER" : {
+      "id" : "ref_int_orders_customers_2##ACYhY0ER",
+      "component" : "TargetSingularDataTest",
+      "metadata" : {
+        "label" : "ref_int_orders_customers_2",
+        "x" : 240,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "query" : "SELECT * \n\nFROM Filter_1\n",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "JtZCxhgm",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "Filter_1"
+        } ],
+        "outputs" : [ {
+          "id" : "LizTcLzy",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "-JQVMYXf1whNdT1zakUwh$$IllqxHn8zAlCJKBjPOWV4" : {
+      "id" : "-JQVMYXf1whNdT1zakUwh$$IllqxHn8zAlCJKBjPOWV4",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "Reformat_1",
+        "x" : 60,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OiU1dtqpUJy-Gw6L2PmYr$$4uv4qfTY3rKNwP_J9nLTe",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "KhQrOH6zip51YDhSMH9qO$$SP6GhgGSChNtXVNQsj6HP",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "wqkjAsVgoz1dPyswn9Aop$$ZOIZdvpzjicm2FK1Ly11V" : {
+      "id" : "wqkjAsVgoz1dPyswn9Aop$$ZOIZdvpzjicm2FK1Ly11V",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_1",
+        "slug" : "Join_1",
+        "x" : -340,
+        "y" : -40,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "expression" : "in0.customer_id=in1.customer_id"
+          },
+          "joinType" : "left"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "in0.order_id"
+          },
+          "alias" : "order_id"
+        }, {
+          "expression" : {
+            "expression" : "in0.customer_id"
+          },
+          "alias" : "customer_id0"
+        }, {
+          "expression" : {
+            "expression" : "in0.order_date"
+          },
+          "alias" : "order_date"
+        }, {
+          "expression" : {
+            "expression" : "in0.status"
+          },
+          "alias" : "status"
+        }, {
+          "expression" : {
+            "expression" : "in0.credit_card_amount"
+          },
+          "alias" : "credit_card_amount"
+        }, {
+          "expression" : {
+            "expression" : "in0.coupon_amount"
+          },
+          "alias" : "coupon_amount"
+        }, {
+          "expression" : {
+            "expression" : "in0.bank_transfer_amount"
+          },
+          "alias" : "bank_transfer_amount"
+        }, {
+          "expression" : {
+            "expression" : "in0.gift_card_amount"
+          },
+          "alias" : "gift_card_amount"
+        }, {
+          "expression" : {
+            "expression" : "in0.amount"
+          },
+          "alias" : "amount"
+        }, {
+          "expression" : {
+            "expression" : "in1.customer_id"
+          },
+          "alias" : "customer_id"
+        }, {
+          "expression" : {
+            "expression" : "in1.first_name"
+          },
+          "alias" : "first_name"
+        }, {
+          "expression" : {
+            "expression" : "in1.last_name"
+          },
+          "alias" : "last_name"
+        }, {
+          "expression" : {
+            "expression" : "in1.first_order"
+          },
+          "alias" : "first_order"
+        }, {
+          "expression" : {
+            "expression" : "in1.most_recent_order"
+          },
+          "alias" : "most_recent_order"
+        }, {
+          "expression" : {
+            "expression" : "in1.number_of_orders"
+          },
+          "alias" : "number_of_orders"
+        }, {
+          "expression" : {
+            "expression" : "in1.customer_lifetime_value"
+          },
+          "alias" : "customer_lifetime_value"
+        } ],
+        "activeTab" : "expressions",
+        "columnsSelector" : [ "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##customer_id", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##customer_id", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##order_id", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##customer_id", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##order_date", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##status", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##credit_card_amount", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##coupon_amount", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##bank_transfer_amount", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##gift_card_amount", "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D##amount", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##customer_id", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##first_name", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##last_name", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##first_order", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##most_recent_order", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##number_of_orders", "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4##customer_lifetime_value" ],
+        "headAlias" : "in0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "in0"
+        }, {
+          "id" : "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "eufBfP7OklmlPiKYgodC3$$qO9ya6RMKcUzKqPgelnIl",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "9CPkfYDQrWzr9SV7yCAx6$$l9GZlPUj8gdcZWe3_vs_n",
+    "source" : "lWzHuUfCp5tWteuDc0FQA",
+    "sourcePort" : "FTZZ-Ku-kkcGrJEiyDqvZ",
+    "target" : "wqkjAsVgoz1dPyswn9Aop$$ZOIZdvpzjicm2FK1Ly11V",
+    "targetPort" : "d47hhs9enYHvCTkC2CrKn$$kd9wh5i9pmxeoVUli6cl4"
+  }, {
+    "id" : "ypiJ0ecgnwM1NZR2qzjNC$$bPiTZ4vSLJ95koyNyHC6e",
+    "source" : "j22JL5-0bOKdfgASf-PZD",
+    "sourcePort" : "veDTlt2LIattN-Kn2K2Os",
+    "target" : "wqkjAsVgoz1dPyswn9Aop$$ZOIZdvpzjicm2FK1Ly11V",
+    "targetPort" : "7p4R4vBsSFr87H4q0BYlE$$VivKxhMABtXOvsRNlYV4D"
+  }, {
+    "id" : "MDlhf71R0_4OvSEjKXu-N$$ViiYdryvj1n6v8NivKk1Q",
+    "source" : "wqkjAsVgoz1dPyswn9Aop$$ZOIZdvpzjicm2FK1Ly11V",
+    "sourcePort" : "eufBfP7OklmlPiKYgodC3$$qO9ya6RMKcUzKqPgelnIl",
+    "target" : "Xh3WzYIJueEr45fcZcze_$$UKAZPUCKXXm-gS_twgreo",
+    "targetPort" : "cyGUn7JYMWUvOmLuHend6$$fvs6nOvmsJpamMDso-hCU"
+  }, {
+    "id" : "VVl2zInRXq5nxHOy4UDwO$$Ql3xrWUlVDQBJHBZYOaAI",
+    "source" : "Xh3WzYIJueEr45fcZcze_$$UKAZPUCKXXm-gS_twgreo",
+    "sourcePort" : "OCsoisND2BrRk_U5sVLyW$$1yK5MFRDSKAADkwpGaw55",
+    "target" : "ref_int_orders_customers_2##ACYhY0ER",
+    "targetPort" : "JtZCxhgm"
+  } ],
+  "component" : "SingularDataTest"
+}
