@@ -12,6 +12,7 @@ WITH source AS (
 
 renamed AS (
 
+  {#Renames the 'id' column as 'customer_id' and selects 'first_name' and 'last_name' from the 'source' table.#}
   SELECT 
     id AS customer_id,
     first_name,

@@ -68,7 +68,9 @@
         "x" : 220,
         "y" : 20,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "comment" : "Renames the 'id' column as 'customer_id' and selects 'first_name' and 'last_name' from the 'source' table.",
+        "autoUpdateComment" : true
       },
       "properties" : {
         "columnsSelector" : [ "zIIDvbTk##id", "zIIDvbTk##first_name", "zIIDvbTk##last_name" ],
@@ -80,7 +82,8 @@
         }, {
           "expression" : {
             "expression" : "first_name"
-          }
+          },
+          "alias" : ""
         }, {
           "expression" : {
             "expression" : "last_name"
