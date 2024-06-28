@@ -1,0 +1,462 @@
+{
+  "id" : "ref_int_orders_customers",
+  "metainfo" : {
+    "label" : "ref_int_orders_customers",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    },
+    "version" : 3
+  },
+  "processes" : {
+    "ref_int_orders_customers##sUI8KHSH" : {
+      "id" : "ref_int_orders_customers##sUI8KHSH",
+      "component" : "TargetSingularDataTest",
+      "metadata" : {
+        "label" : "ref_int_orders_customers",
+        "x" : -40,
+        "y" : 120,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "query" : "SELECT * \n\nFROM final\n",
+        "customQuery" : false,
+        "customQueryDisabled" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "eiG3Jsud",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "final"
+        } ],
+        "outputs" : [ {
+          "id" : "IhXGzRG1",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "qad1z-MNjD7PnRKupe7Ba$$PTihIo2w4iMxhe7t6Yo-9" : {
+      "id" : "qad1z-MNjD7PnRKupe7Ba$$PTihIo2w4iMxhe7t6Yo-9",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "orders",
+        "x" : -520,
+        "y" : 20,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "stg_orders",
+          "sourceType" : "Model"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "lEuR_1Y0Af--x01anFzUt$$3nx29kquP5nmjnMmuNlXz",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "QYpDKr5RroLQMlUfntNej$$NxEm9nUX6mluyAia6p-Pr" : {
+      "id" : "QYpDKr5RroLQMlUfntNej$$NxEm9nUX6mluyAia6p-Pr",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "payments",
+        "x" : -720,
+        "y" : 220,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "stg_payments",
+          "sourceType" : "Model"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "2q46H55NGDMV2pEsvk1p0$$6CsK7Y5b89Y-whl4fzJEr",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "payment_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "payment_method",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "mrmSOqP8noTA_37xp6h7D$$I7_N9w7pO4ZBLEdQBOBnR" : {
+      "id" : "mrmSOqP8noTA_37xp6h7D$$I7_N9w7pO4ZBLEdQBOBnR",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "order_payments",
+        "x" : -520,
+        "y" : 220,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "aggregate" : [ {
+          "expression" : {
+            "expression" : "order_id"
+          }
+        }, {
+          "rowType" : "for",
+          "variable" : {
+            "expression" : "payment_method"
+          },
+          "iterable" : {
+            "expression" : "payment_methods"
+          },
+          "children" : [ {
+            "expression" : {
+              "expression" : "sum(CASE\n  WHEN payment_method = '{{ payment_method }}'\n    THEN amount\n  ELSE 0\nEND)"
+            },
+            "alias" : "{{payment_method}}_amount"
+          } ]
+        }, {
+          "expression" : {
+            "expression" : "sum(amount)"
+          },
+          "alias" : "total_amount"
+        } ],
+        "allowSelection" : true,
+        "condition" : {
+          "expression" : ""
+        },
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "XYDnTDCiN4jU3ZfN3rCNw$$QcvlvvxRxdZvlkXDKPxVk##order_id", "XYDnTDCiN4jU3ZfN3rCNw$$QcvlvvxRxdZvlkXDKPxVk##payment_method", "XYDnTDCiN4jU3ZfN3rCNw$$QcvlvvxRxdZvlkXDKPxVk##amount" ],
+        "groupBy" : [ {
+          "expression" : {
+            "expression" : "order_id"
+          }
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "XYDnTDCiN4jU3ZfN3rCNw$$QcvlvvxRxdZvlkXDKPxVk",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "payment_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "payment_method",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "payments"
+        } ],
+        "outputs" : [ {
+          "id" : "r-BuwxWpqhPusq2aSTDGZ$$w84bA7xEQko-73QS4KfxG",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "total_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "1joDTyxPofGURW6RwGVgh$$ZxhRL6pywCw7TK-yHe6Mq" : {
+      "id" : "1joDTyxPofGURW6RwGVgh$$ZxhRL6pywCw7TK-yHe6Mq",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "final",
+        "x" : -320,
+        "y" : 120,
+        "phase" : 0,
+        "macroDependencies" : [ ]
+      },
+      "properties" : {
+        "conditions" : [ {
+          "alias" : "order_payments",
+          "expression" : {
+            "expression" : "orders.order_id = order_payments.order_id"
+          },
+          "joinType" : "LEFT"
+        } ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "orders.order_id"
+          }
+        }, {
+          "expression" : {
+            "expression" : "orders.customer_id"
+          }
+        }, {
+          "expression" : {
+            "expression" : "orders.order_date"
+          }
+        }, {
+          "expression" : {
+            "expression" : "orders.status"
+          }
+        }, {
+          "rowType" : "for",
+          "variable" : {
+            "expression" : "payment_method"
+          },
+          "iterable" : {
+            "expression" : "payment_methods"
+          },
+          "children" : [ {
+            "expression" : {
+              "expression" : "order_payments.{{payment_method}}_amount"
+            }
+          } ]
+        }, {
+          "expression" : {
+            "expression" : "order_payments.total_amount"
+          },
+          "alias" : "amount"
+        } ],
+        "activeTab" : "conditions",
+        "columnsSelector" : [ "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5##order_id", "Bg82_xX3HHJusvOtP_4wv$$bncgS-duHnjlxYrce7gvC##order_id", "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5##order_id", "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5##customer_id", "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5##order_date", "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5##status", "Bg82_xX3HHJusvOtP_4wv$$bncgS-duHnjlxYrce7gvC##total_amount" ],
+        "headAlias" : "orders"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "slug" : "orders"
+        }, {
+          "id" : "Bg82_xX3HHJusvOtP_4wv$$bncgS-duHnjlxYrce7gvC",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "total_amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "order_payments"
+        } ],
+        "outputs" : [ {
+          "id" : "bK-gmaIgR1iYNU2fjJbeX$$DsKjPrSbLYpzpFFIXN6qX",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "HM44j6CL2M4lMOgvlb82B",
+    "source" : "QYpDKr5RroLQMlUfntNej$$NxEm9nUX6mluyAia6p-Pr",
+    "sourcePort" : "2q46H55NGDMV2pEsvk1p0$$6CsK7Y5b89Y-whl4fzJEr",
+    "target" : "mrmSOqP8noTA_37xp6h7D$$I7_N9w7pO4ZBLEdQBOBnR",
+    "targetPort" : "XYDnTDCiN4jU3ZfN3rCNw$$QcvlvvxRxdZvlkXDKPxVk"
+  }, {
+    "id" : "_VbCKftkA0qLNnXJp6iOw",
+    "source" : "qad1z-MNjD7PnRKupe7Ba$$PTihIo2w4iMxhe7t6Yo-9",
+    "sourcePort" : "lEuR_1Y0Af--x01anFzUt$$3nx29kquP5nmjnMmuNlXz",
+    "target" : "1joDTyxPofGURW6RwGVgh$$ZxhRL6pywCw7TK-yHe6Mq",
+    "targetPort" : "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5"
+  }, {
+    "id" : "K2I4wVHvl-ErauLMKT2KX",
+    "source" : "mrmSOqP8noTA_37xp6h7D$$I7_N9w7pO4ZBLEdQBOBnR",
+    "sourcePort" : "r-BuwxWpqhPusq2aSTDGZ$$w84bA7xEQko-73QS4KfxG",
+    "target" : "1joDTyxPofGURW6RwGVgh$$ZxhRL6pywCw7TK-yHe6Mq",
+    "targetPort" : "Bg82_xX3HHJusvOtP_4wv$$bncgS-duHnjlxYrce7gvC"
+  }, {
+    "id" : "uTPdRT1RP0YKig1TttjpM",
+    "source" : "1joDTyxPofGURW6RwGVgh$$ZxhRL6pywCw7TK-yHe6Mq",
+    "sourcePort" : "bK-gmaIgR1iYNU2fjJbeX$$DsKjPrSbLYpzpFFIXN6qX",
+    "target" : "ref_int_orders_customers##sUI8KHSH",
+    "targetPort" : "eiG3Jsud"
+  } ],
+  "component" : "SingularDataTest"
+}
