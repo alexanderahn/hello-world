@@ -361,7 +361,7 @@
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "query" : "SELECT * \n\nFROM Filter_1\n",
+        "query" : "SELECT * \n\nFROM Reformat_1\n",
         "customQuery" : false,
         "customQueryDisabled" : true
       },
@@ -452,7 +452,7 @@
               }
             } ]
           },
-          "slug" : "Filter_1"
+          "slug" : "Reformat_1"
         } ],
         "outputs" : [ {
           "id" : "LizTcLzy",
@@ -546,13 +546,13 @@
         "autoUpdateOnRun" : false
       }
     },
-    "-JQVMYXf1whNdT1zakUwh$$IllqxHn8zAlCJKBjPOWV4" : {
-      "id" : "-JQVMYXf1whNdT1zakUwh$$IllqxHn8zAlCJKBjPOWV4",
+    "75ZFOdAGkaBz7a1lzDjZy$$4j7YpmfAQC9ETnm1Caj7G" : {
+      "id" : "75ZFOdAGkaBz7a1lzDjZy$$4j7YpmfAQC9ETnm1Caj7G",
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "Reformat_1",
-        "x" : 60,
+        "x" : 40,
         "y" : -40,
         "phase" : 0,
         "macroDependencies" : [ ]
@@ -563,11 +563,179 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "OiU1dtqpUJy-Gw6L2PmYr$$4uv4qfTY3rKNwP_J9nLTe",
+          "id" : "FQBFL-9PsGq9Owb0jAXVg$$x9l0mfXb4l1vleJKmqXHx",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
           "slug" : "in0"
         } ],
         "outputs" : [ {
-          "id" : "KhQrOH6zip51YDhSMH9qO$$SP6GhgGSChNtXVNQsj6HP",
+          "id" : "hxBJarbDfLfFRtINVOQ9c$$-EqcBueuZwe8JCc79V6Ib",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "order_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "customer_id0",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "order_date",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "status",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "credit_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "coupon_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "bank_transfer_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "gift_card_amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "amount",
+              "dataType" : {
+                "type" : "Float"
+              }
+            }, {
+              "name" : "customer_id",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "first_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "last_name",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "first_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "most_recent_order",
+              "dataType" : {
+                "type" : "Date"
+              }
+            }, {
+              "name" : "number_of_orders",
+              "dataType" : {
+                "type" : "Bigint"
+              }
+            }, {
+              "name" : "customer_lifetime_value",
+              "dataType" : {
+                "type" : "Float"
+              }
+            } ]
+          },
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -886,9 +1054,15 @@
     "target" : "Xh3WzYIJueEr45fcZcze_$$UKAZPUCKXXm-gS_twgreo",
     "targetPort" : "cyGUn7JYMWUvOmLuHend6$$fvs6nOvmsJpamMDso-hCU"
   }, {
-    "id" : "VVl2zInRXq5nxHOy4UDwO$$Ql3xrWUlVDQBJHBZYOaAI",
+    "id" : "ZLTBiN1X7TZnRD1BxLCIa$$_QqsKCrqOje3-7DTGrhHM",
     "source" : "Xh3WzYIJueEr45fcZcze_$$UKAZPUCKXXm-gS_twgreo",
     "sourcePort" : "OCsoisND2BrRk_U5sVLyW$$1yK5MFRDSKAADkwpGaw55",
+    "target" : "75ZFOdAGkaBz7a1lzDjZy$$4j7YpmfAQC9ETnm1Caj7G",
+    "targetPort" : "FQBFL-9PsGq9Owb0jAXVg$$x9l0mfXb4l1vleJKmqXHx"
+  }, {
+    "id" : "jgHJmXpShre8MbCQxylvM",
+    "source" : "75ZFOdAGkaBz7a1lzDjZy$$4j7YpmfAQC9ETnm1Caj7G",
+    "sourcePort" : "hxBJarbDfLfFRtINVOQ9c$$-EqcBueuZwe8JCc79V6Ib",
     "target" : "ref_int_orders_customers_2##ACYhY0ER",
     "targetPort" : "JtZCxhgm"
   } ],

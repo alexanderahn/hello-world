@@ -1,12 +1,4 @@
-WITH Reformat_1 AS (
-
-  SELECT * 
-  
-  FROM in0
-
-),
-
-orders AS (
+WITH orders AS (
 
   SELECT * 
   
@@ -56,8 +48,16 @@ Filter_1 AS (
   
   WHERE customer_id0 IS NULL
 
+),
+
+Reformat_1 AS (
+
+  SELECT * 
+  
+  FROM Filter_1 AS in0
+
 )
 
 SELECT *
 
-FROM Filter_1
+FROM Reformat_1
