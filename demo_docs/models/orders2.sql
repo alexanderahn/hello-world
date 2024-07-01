@@ -53,11 +53,21 @@ total_amount_desc_nulls_first AS (
 
 ),
 
-limit_50 AS (
+total_amount_desc_nulls_first_1 AS (
 
   SELECT * 
   
   FROM total_amount_desc_nulls_first
+  
+  WHERE TOTAL_AMOUNT >= 2
+
+),
+
+filter_limit_50 AS (
+
+  SELECT * 
+  
+  FROM total_amount_desc_nulls_first_1
   
   LIMIT 50
 
@@ -65,4 +75,4 @@ limit_50 AS (
 
 SELECT *
 
-FROM limit_50
+FROM total_amount_desc_nulls_first

@@ -172,21 +172,7 @@ sqlModels:
     createdAt: '2024-06-03 21:34:10'
   .prophecy/metadata/sqlmodels/orders2:
     name: orders2
-    schema:
-      providerType: Databricks
-      fields:
-      - name: CUSTOMER_ID
-        dataType:
-          type: Integer
-      - name: FIRST_NAME
-        dataType:
-          type: String
-      - name: LAST_NAME
-        dataType:
-          type: String
-      - name: TOTAL_AMOUNT
-        dataType:
-          type: Double
+    schema: null
     description: null
     author: alexahn@prophecy.io
     files:
