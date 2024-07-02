@@ -49,6 +49,14 @@
     "type" : "Model",
     "syncedOnce" : true
   }, {
+    "name" : "orders2",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
+    "name" : "orders_demo",
+    "type" : "Model",
+    "syncedOnce" : false
+  }, {
     "name" : "stg_customers",
     "type" : "Model",
     "syncedOnce" : true

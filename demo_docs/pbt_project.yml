@@ -100,6 +100,32 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2024-06-03 21:34:10'
+  .prophecy/metadata/sqlmodels/orders_demo:
+    name: orders_demo
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - models/orders_demo/orders_demo.sql
+    - .prophecy/ide/models/orders_demo.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-07-01 09:04:15'
   .prophecy/metadata/sqlmodels/customers:
     name: customers
     schema:
@@ -172,12 +198,27 @@ sqlModels:
     createdAt: '2024-06-03 21:34:10'
   .prophecy/metadata/sqlmodels/orders2:
     name: orders2
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: CUSTOMER_ID
+        dataType:
+          type: Integer
+      - name: FIRST_NAME
+        dataType:
+          type: String
+      - name: LAST_NAME
+        dataType:
+          type: String
+      - name: TOTAL_AMOUNT
+        dataType:
+          type: Double
     description: null
     author: alexahn@prophecy.io
     files:
     - models/orders2.sql
     - .prophecy/ide/models/orders2.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []

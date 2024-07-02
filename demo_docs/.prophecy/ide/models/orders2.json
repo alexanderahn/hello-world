@@ -23,7 +23,9 @@
         "x" : 840,
         "y" : 120,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "comment" : "Creates a new table 'orders2' with the same data as 'total_amount_desc_nulls_first'.",
+        "autoUpdateComment" : true
       },
       "properties" : {
         "customQueryDisabled" : true,
@@ -39,138 +41,34 @@
       "ports" : {
         "inputs" : [ {
           "id" : "W4g1TTWs",
+          "schema" : {
+            "providerType" : "Databricks",
+            "fields" : [ {
+              "name" : "CUSTOMER_ID",
+              "dataType" : {
+                "type" : "Integer"
+              }
+            }, {
+              "name" : "FIRST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LAST_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TOTAL_AMOUNT",
+              "dataType" : {
+                "type" : "Double"
+              }
+            } ]
+          },
           "slug" : "total_amount_desc_nulls_first"
         } ],
         "outputs" : [ {
           "id" : "N1OVuyVK",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
-    "total_amount_desc_nulls_first_1##JB7BAxpE" : {
-      "id" : "total_amount_desc_nulls_first_1##JB7BAxpE",
-      "component" : "Filter",
-      "metadata" : {
-        "label" : "total_amount_desc_nulls_first_1",
-        "x" : 820,
-        "y" : -40,
-        "phase" : 0,
-        "macroDependencies" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "condition" : {
-          "expression" : "TOTAL_AMOUNT >= 2"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "OGHjVtBw",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "CUSTOMER_ID",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "FIRST_NAME",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "LAST_NAME",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "TOTAL_AMOUNT",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
-          "slug" : "total_amount_desc_nulls_first"
-        } ],
-        "outputs" : [ {
-          "id" : "aiSlPjJL",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "CUSTOMER_ID",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "FIRST_NAME",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "LAST_NAME",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "TOTAL_AMOUNT",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      }
-    },
-    "filter_limit_50##yA0axDM5" : {
-      "id" : "filter_limit_50##yA0axDM5",
-      "component" : "Limit",
-      "metadata" : {
-        "label" : "filter_limit_50",
-        "x" : 1020,
-        "y" : -40,
-        "phase" : 0
-      },
-      "properties" : {
-        "limit" : {
-          "expression" : "50"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "jAlxN3Vp",
-          "schema" : {
-            "providerType" : "Databricks",
-            "fields" : [ {
-              "name" : "CUSTOMER_ID",
-              "dataType" : {
-                "type" : "Integer"
-              }
-            }, {
-              "name" : "FIRST_NAME",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "LAST_NAME",
-              "dataType" : {
-                "type" : "String"
-              }
-            }, {
-              "name" : "TOTAL_AMOUNT",
-              "dataType" : {
-                "type" : "Double"
-              }
-            } ]
-          },
-          "slug" : "total_amount_desc_nulls_first_1"
-        } ],
-        "outputs" : [ {
-          "id" : "MR1LDQ8I",
           "schema" : {
             "providerType" : "Databricks",
             "fields" : [ {
@@ -206,6 +104,7 @@
       "component" : "Aggregate",
       "metadata" : {
         "label" : "total_amount_by_customer",
+        "slug" : "total_amount_by_customer",
         "x" : 420,
         "y" : 120,
         "phase" : 0,
@@ -726,17 +625,11 @@
     "target" : "total_amount_desc_nulls_first##j6w0OraL",
     "targetPort" : "cg8BVrTs"
   }, {
-    "id" : "KjNsbphv",
-    "source" : "total_amount_desc_nulls_first_1##JB7BAxpE",
-    "sourcePort" : "aiSlPjJL",
-    "target" : "filter_limit_50##yA0axDM5",
-    "targetPort" : "jAlxN3Vp"
-  }, {
-    "id" : "zmLyJFHq",
+    "id" : "eKVbRPbrwr7EG66qTBuY8",
     "source" : "total_amount_desc_nulls_first##j6w0OraL",
     "sourcePort" : "of6PiUgx",
-    "target" : "total_amount_desc_nulls_first_1##JB7BAxpE",
-    "targetPort" : "OGHjVtBw"
+    "target" : "orders2##swSDWQd1",
+    "targetPort" : "W4g1TTWs"
   } ],
   "component" : "Model"
 }
