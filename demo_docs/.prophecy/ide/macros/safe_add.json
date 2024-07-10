@@ -1,0 +1,22 @@
+{
+  "safe_add" : {
+    "name" : "safe_add",
+    "macroType" : "expression",
+    "definition" : "{% set fields = [] %}\n\n{% for field in field_list %}\n{% do fields.append(\"COALESCE(\" ~ field ~ \", 0)\") %}\n\n{% if not loop.last %} , {% endif %}\n{% endfor %}\n\n{{fields | join(' + ')}}",
+    "parameters" : {
+      "type" : "record",
+      "fields" : [ {
+        "name" : "field_list",
+        "kind" : {
+          "type" : "value"
+        },
+        "optional" : false,
+        "isWorkflowNodeConfiguration" : false,
+        "isReferenced" : false
+      } ]
+    },
+    "description" : "A macro to safely add the fields specified in the field_list.",
+    "staleState" : "none",
+    "version" : 0
+  }
+}

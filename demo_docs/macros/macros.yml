@@ -1,3 +1,10 @@
 ---
 version: 2
-macros: []
+macros:
+- name: "safe_add"
+  description: "A macro to safely add the fields specified in the field_list."
+  arguments:
+  - name: "field_list"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  macroType: "expression"

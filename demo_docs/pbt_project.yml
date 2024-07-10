@@ -8,7 +8,30 @@ buildSystemDetails: null
 pipelines: {}
 datasets: {}
 templates: {}
-jobs: {}
+jobs:
+  jobs/test:
+    name: test
+    description: ''
+    fabricUID: 119
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: null
+    scheduleCron: None
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines: []
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-07-10 23:40:53'
+    author: alexahn@prophecy.io
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -100,32 +123,6 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2024-06-03 21:34:10'
-  .prophecy/metadata/sqlmodels/orders_demo:
-    name: orders_demo
-    schema:
-      providerType: Databricks
-      fields:
-      - name: id
-        dataType:
-          type: Integer
-      - name: first_name
-        dataType:
-          type: String
-      - name: last_name
-        dataType:
-          type: String
-    description: null
-    author: alexahn@prophecy.io
-    files:
-    - models/orders_demo/orders_demo.sql
-    - .prophecy/ide/models/orders_demo.json
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2024-07-01 09:04:15'
   .prophecy/metadata/sqlmodels/customers:
     name: customers
     schema:
@@ -196,36 +193,6 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2024-06-03 21:34:10'
-  .prophecy/metadata/sqlmodels/orders2:
-    name: orders2
-    schema:
-      providerType: Databricks
-      fields:
-      - name: CUSTOMER_ID
-        dataType:
-          type: Integer
-      - name: FIRST_NAME
-        dataType:
-          type: String
-      - name: LAST_NAME
-        dataType:
-          type: String
-      - name: TOTAL_AMOUNT
-        dataType:
-          type: Double
-    description: null
-    author: alexahn@prophecy.io
-    files:
-    - models/orders2.sql
-    - .prophecy/ide/models/orders2.json
-    - models/schema.yml
-    sqlDependencies:
-      models: []
-      datasets: []
-      seeds: []
-      sources: []
-      snapshots: []
-    createdAt: '2024-06-07 18:04:12'
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
     schema:
@@ -273,7 +240,17 @@ sqlTests:
     - .prophecy/ide/tests/data/singular/ref_int_orders_customers_2.json
     testType: SingularDataTest
     createdAt: '2024-06-04 21:33:36'
-sqlMacros: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/safe_add:
+    name: safe_add
+    macroType: expression
+    description: A macro to safely add the fields specified in the field_list.
+    author: alexahn@prophecy.io
+    files:
+    - macros/safe_add.sql
+    - .prophecy/ide/macros/safe_add.json
+    - macros/macros.yml
+    createdAt: '2024-07-10 23:21:25'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers

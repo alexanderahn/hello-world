@@ -70,9 +70,3 @@ models:
     description: "Amount of the order (AUD) paid for by gift card"
     tests:
     - "not_null"
-- name: "orders2"
-  columns:
-  - name: "last_order"
-    dataType:
-      type: "String"
-  - name: "name_initials"
