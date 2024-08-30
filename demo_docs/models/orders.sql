@@ -1,3 +1,10 @@
+{{
+  config({    
+    "materialized": "incremental",
+    "incremental_strategy": 'merge'
+  })
+}}
+
 {% set payment_methods = ['credit_card', 'coupon', 'bank_transfer', 'gift_card'] %}
 
 WITH payments AS (
@@ -52,6 +59,29 @@ final AS (
   FROM orders
   LEFT JOIN order_payments
      ON orders.order_id = order_payments.order_id
+
+),
+
+Subgraph_1 AS (
+
+  WITH final_1 AS (
+  
+    SELECT 
+      orders.order_id,
+      orders.customer_id,
+      orders.order_date,
+      orders.status,
+      {% for payment_method in payment_methods %}
+        order_payments.{{payment_method}}_amount,
+      {% endfor %}
+      
+      order_payments.total_amount AS amount
+    
+    FROM orders
+    LEFT JOIN in0 AS order_payments
+       ON orders.order_id = order_payments.order_id
+  
+  )
 
 )
 

@@ -32,6 +32,8 @@ jobs:
     enabled: null
     createdAt: '2024-07-10 23:40:53'
     author: alexahn@prophecy.io
+    models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -50,6 +52,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/stg_orders:
     name: stg_orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: order_id
@@ -80,6 +83,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/orders:
     name: orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: order_id
@@ -96,19 +100,19 @@ sqlModels:
           type: String
       - name: credit_card_amount
         dataType:
-          type: Double
+          type: Float
       - name: coupon_amount
         dataType:
-          type: Double
+          type: Float
       - name: bank_transfer_amount
         dataType:
-          type: Double
+          type: Float
       - name: gift_card_amount
         dataType:
-          type: Double
+          type: Float
       - name: amount
         dataType:
-          type: Double
+          type: Float
     description: This table has basic information about orders, as well as some derived
       facts based on payments
     author: alexahn@prophecy.io
@@ -126,6 +130,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/customers:
     name: customers
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: customer_id
@@ -148,7 +153,7 @@ sqlModels:
           type: Bigint
       - name: customer_lifetime_value
         dataType:
-          type: Double
+          type: Float
     description: This table has basic information about a customer, as well as some
       derived facts based on a customer's orders
     author: alexahn@prophecy.io
@@ -166,6 +171,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/stg_payments:
     name: stg_payments
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: payment_id
@@ -179,7 +185,7 @@ sqlModels:
           type: String
       - name: amount
         dataType:
-          type: Double
+          type: Float
     description: null
     author: alexahn@prophecy.io
     files:
@@ -196,6 +202,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/stg_customers:
     name: stg_customers
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: customer_id
@@ -251,10 +258,20 @@ sqlMacros:
     - .prophecy/ide/macros/safe_add.json
     - macros/macros.yml
     createdAt: '2024-07-10 23:21:25'
+  .prophecy/metadata/sqlmacros/test:
+    name: test
+    macroType: expression
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - macros/test.sql
+    - .prophecy/ide/macros/test.json
+    createdAt: '2024-07-30 00:43:55'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_customers:
     name: raw_customers
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -274,6 +291,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_orders:
     name: raw_orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -296,6 +314,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_payments:
     name: raw_payments
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -315,7 +334,20 @@ sqlSeeds:
     files:
     - seeds/raw_payments.csv
     createdAt: '2024-06-03 21:34:10'
-sqlSources: {}
+sqlSources:
+  .prophecy/metadata/sqlsources/test:
+    name: test
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - models/test.yml
+    createdAt: '2024-07-18 06:14:10'
+    tables:
+    - name: test
+      schema: null
+      description: null
+      author: alexahn@prophecy.io
+      createdAt: '2024-07-18 06:14:27'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

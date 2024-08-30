@@ -29,6 +29,7 @@
         "inputs" : [ {
           "id" : "eiG3Jsud",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -53,7 +54,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             } ]
           },
@@ -62,6 +63,7 @@
         "outputs" : [ {
           "id" : "IhXGzRG1",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -86,7 +88,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             } ]
           },
@@ -116,6 +118,7 @@
         "outputs" : [ {
           "id" : "lEuR_1Y0Af--x01anFzUt$$3nx29kquP5nmjnMmuNlXz",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -165,6 +168,7 @@
         "outputs" : [ {
           "id" : "2q46H55NGDMV2pEsvk1p0$$6CsK7Y5b89Y-whl4fzJEr",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -184,7 +188,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             } ]
           },
@@ -245,6 +249,7 @@
         "inputs" : [ {
           "id" : "XYDnTDCiN4jU3ZfN3rCNw$$QcvlvvxRxdZvlkXDKPxVk",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "payment_id",
@@ -264,7 +269,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             } ]
           },
@@ -273,6 +278,7 @@
         "outputs" : [ {
           "id" : "r-BuwxWpqhPusq2aSTDGZ$$w84bA7xEQko-73QS4KfxG",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -353,6 +359,7 @@
         "inputs" : [ {
           "id" : "OSxGg94KmYmWHh-jWnE2U$$MP14TPI5t0h_yhgyihoo5",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -380,6 +387,7 @@
         }, {
           "id" : "Bg82_xX3HHJusvOtP_4wv$$bncgS-duHnjlxYrce7gvC",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -398,6 +406,7 @@
         "outputs" : [ {
           "id" : "bK-gmaIgR1iYNU2fjJbeX$$DsKjPrSbLYpzpFFIXN6qX",
           "schema" : {
+            "entityType" : "",
             "providerType" : "Databricks",
             "fields" : [ {
               "name" : "order_id",
@@ -422,7 +431,7 @@
             }, {
               "name" : "amount",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             } ]
           },
