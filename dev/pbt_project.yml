@@ -1,0 +1,165 @@
+name: snowflake_docs
+description: ''
+version: 0.0.1
+author: alexahn@prophecy.io
+language: sql
+buildSystem: ''
+buildSystemDetails: null
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-10-08 16:13:41'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels:
+  .prophecy/metadata/sqlmodels/customers:
+    name: customers
+    schema: null
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - models/customers.sql
+    - .prophecy/ide/models/customers.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-10-08 16:35:53'
+  .prophecy/metadata/sqlmodels/orders:
+    name: orders
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: ORDER_ID
+        dataType:
+          type: Number
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
+      - name: ORDER_DATE
+        dataType:
+          type: Date
+      - name: STATUS
+        dataType:
+          type: String
+      - name: AMOUNT
+        dataType:
+          type: Number
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - models/orders.sql
+    - .prophecy/ide/models/orders.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-10-08 16:36:06'
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros:
+  .prophecy/metadata/sqlmacros/generate_schema_name:
+    name: generate_schema_name
+    macroType: expression
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - macros/generate_schema_name.sql
+    - .prophecy/ide/macros/generate_schema_name.json
+    createdAt: '2024-10-08 16:13:44'
+sqlSeeds:
+  .prophecy/metadata/sqlseeds/raw_customers:
+    name: raw_customers
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: id
+        dataType:
+          type: Number
+      - name: first_name
+        dataType:
+          type: String
+      - name: last_name
+        dataType:
+          type: String
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - seeds/raw_customers.csv
+    createdAt: '2024-10-08 16:33:49'
+  .prophecy/metadata/sqlseeds/raw_orders:
+    name: raw_orders
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: id
+        dataType:
+          type: Number
+      - name: user_id
+        dataType:
+          type: Number
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - seeds/raw_orders.csv
+    createdAt: '2024-10-08 16:34:30'
+  .prophecy/metadata/sqlseeds/raw_payments:
+    name: raw_payments
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: id
+        dataType:
+          type: Number
+      - name: order_id
+        dataType:
+          type: Number
+      - name: payment_method
+        dataType:
+          type: String
+      - name: amount
+        dataType:
+          type: Number
+    description: null
+    author: alexahn@prophecy.io
+    files:
+    - seeds/raw_payments.csv
+    createdAt: '2024-10-08 16:35:13'
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline:
+  name: sqlPipeline
+  description: null
+  author: alexahn@prophecy.io
+  createdAt: '2024-10-08 16:13:41'
+dependencies: []
+projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}

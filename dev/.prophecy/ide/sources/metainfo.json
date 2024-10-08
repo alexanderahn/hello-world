@@ -1,0 +1,3428 @@
+{
+  "name" : "snowflake_docs",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "snowflake",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Database",
+      "name" : "AANALYTICS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "ANALYTICS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "ARAW",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "COVID19_EPIDEMIOLOGICAL_DATA",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "DEVENVDEMOS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "DEV_ANALYTICS",
+      "children" : [ {
+        "type" : "Schema",
+        "name" : "ALEX",
+        "tables" : { }
+      }, {
+        "type" : "Schema",
+        "name" : "INFORMATION_SCHEMA",
+        "tables" : {
+          "FIELDS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "OBJECT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROW_IDENTIFIER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FIELD_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ORDINAL_POSITION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DATETIME_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "INTERVAL_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INTERVAL_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_SET_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_SET_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_SET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MAXIMUM_CARDINALITY",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DTD_IDENTIFIER",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "INDEXES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_UNIQUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "VIEWS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VIEW_DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHECK_OPTION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_UPDATABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INSERTABLE_INTO",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_SECURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_DDL",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_DDL_BY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "INDEX_COLUMNS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INDEX_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "KEY_SEQUENCE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "INDEX_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_UNIQUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "INFORMATION_SCHEMA_CATALOG_NAME" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CATALOG_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "CLASS_INSTANCE_PROCEDURES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "PROCEDURE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_INSTANCE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_INSTANCE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_INSTANCE_DATABASE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ARGUMENT_SIGNATURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "PROCEDURE_LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "STAGES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "STAGE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STAGE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STAGE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STAGE_URL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STAGE_REGION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STAGE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STAGE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "ENDPOINT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DIRECTORY_ENABLED",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            } ]
+          },
+          "STREAMLITS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "STREAMLIT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_ROOT_LOCATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_MAIN_FILE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_QUERY_WAREHOUSE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_URL_ID",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STREAMLIT_TITLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "HYBRID_TABLES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROW_COUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "RETENTION_TIME",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "DATABASES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "DATABASE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATABASE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_TRANSIENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "RETENTION_TIME",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "REFERENTIAL_CONSTRAINTS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CONSTRAINT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UNIQUE_CONSTRAINT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UNIQUE_CONSTRAINT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UNIQUE_CONSTRAINT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MATCH_OPTION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UPDATE_RULE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DELETE_RULE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "APPLICABLE_ROLES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "GRANTEE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROLE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_GRANTABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "MODEL_VERSIONS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CATALOG_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CATALOG_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "SCHEMA_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "MODEL_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MODEL_VERSION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VERSION_ALIASES",
+              "dataType" : {
+                "type" : "Array"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MODEL_COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED_ON",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED_ON",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "FUNCTIONS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MODEL_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PYTHON_VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DEPENDENCIES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "METADATA",
+              "dataType" : {
+                "type" : "Object"
+              }
+            }, {
+              "name" : "USERDATA",
+              "dataType" : {
+                "type" : "Object"
+              }
+            } ]
+          },
+          "CLASSES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATABASE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER_ROLE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_SERVICE_CLASS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "SEQUENCES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "SEQUENCE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SEQUENCE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SEQUENCE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SEQUENCE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "START_VALUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MINIMUM_VALUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MAXIMUM_VALUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NEXT_VALUE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INCREMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CYCLE_OPTION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "ORDERED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "SERVICES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "SERVICE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_OWNER_ROLE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMPUTE_POOL_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DNS_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CURRENT_INSTANCES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TARGET_INSTANCES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "MIN_INSTANCES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "MAX_INSTANCES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "AUTO_RESUME",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "QUERY_WAREHOUSE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_RESUMED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "IS_JOB",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "SPEC_DIGEST",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_UPGRADING",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "MANAGING_OBJECT_DOMAIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MANAGING_OBJECT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "PROCEDURES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "PROCEDURE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ARGUMENT_SIGNATURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "PROCEDURE_LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PROCEDURE_DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "EXTERNAL_ACCESS_INTEGRATIONS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SECRETS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "CLASS_INSTANCE_FUNCTIONS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "FUNCTION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_INSTANCE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_INSTANCE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_INSTANCE_DATABASE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ARGUMENT_SIGNATURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FUNCTION_LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VOLATILITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_NULL_CALL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_SECURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_EXTERNAL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "API_INTEGRATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONTEXT_HEADERS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MAX_BATCH_ROWS",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "COMPRESSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PACKAGES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "RUNTIME_VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INSTALLED_PACKAGES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_MEMOIZABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "EVENT_TABLES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "SCHEMATA" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CATALOG_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_TRANSIENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_MANAGED_ACCESS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "RETENTION_TIME",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DEFAULT_CHARACTER_SET_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DEFAULT_CHARACTER_SET_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DEFAULT_CHARACTER_SET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SQL_PATH",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "CORTEX_SEARCH_SERVICES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "SERVICE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SEARCH_COLUMN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ATTRIBUTE_COLUMNS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLUMNS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TARGET_LAG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "WAREHOUSE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVICE_QUERY_URL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER_ROLE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TIMESTAMP",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "SOURCE_DATA_BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "SOURCE_DATA_NUM_ROWS",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "INDEXING_STATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INDEXING_ERROR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SERVING_STATE",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "SERVING_DATA_BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "REPLICATION_DATABASES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "REGION_GROUP",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SNOWFLAKE_REGION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ACCOUNT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATABASE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "IS_PRIMARY",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "PRIMARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "REPLICATION_ALLOWED_TO_ACCOUNTS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FAILOVER_ALLOWED_TO_ACCOUNTS",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "PIPES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "PIPE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PIPE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PIPE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PIPE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_AUTOINGEST_ENABLED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NOTIFICATION_CHANNEL_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PATTERN",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "GIT_REPOSITORIES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "GIT_REPOSITORY_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GIT_REPOSITORY_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GIT_REPOSITORY_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GIT_REPOSITORY_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ORIGIN",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "API_INTEGRATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GIT_CREDENTIALS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "ENABLED_ROLES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "ROLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROLE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "CLASS_INSTANCES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATABASE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CLASS_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CLASS_SCHEMA_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CLASS_DATABASE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OWNER_ROLE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "COLUMNS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLUMN_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ORDINAL_POSITION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "COLUMN_DEFAULT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_NULLABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DATETIME_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "INTERVAL_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INTERVAL_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_SET_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_SET_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_SET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DOMAIN_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DOMAIN_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DOMAIN_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MAXIMUM_CARDINALITY",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DTD_IDENTIFIER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_SELF_REFERENCING",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_IDENTITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_GENERATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_START",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_INCREMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_MAXIMUM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_MINIMUM",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_CYCLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IDENTITY_ORDERED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCHEMA_EVOLUTION_RECORD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "ELEMENT_TYPES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "OBJECT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLECTION_TYPE_IDENTIFIER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DATETIME_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "INTERVAL_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INTERVAL_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_SET_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_SET_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_SET_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COLLATION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "UDT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SCOPE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MAXIMUM_CARDINALITY",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DTD_IDENTIFIER",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "PACKAGES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "PACKAGE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "RUNTIME_VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "TABLE_PRIVILEGES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "GRANTOR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GRANTEE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PRIVILEGE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_GRANTABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "WITH_HIERARCHY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "REPLICATION_GROUPS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "REGION_GROUP",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SNOWFLAKE_REGION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED_ON",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "ACCOUNT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_PRIMARY",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            }, {
+              "name" : "PRIMARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_TYPES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ALLOWED_INTEGRATION_TYPES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ALLOWED_ACCOUNTS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ORGANIZATION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ACCOUNT_LOCATOR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "REPLICATION_SCHEDULE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SECONDARY_STATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NEXT_SCHEDULED_REFRESH",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_LISTING_AUTO_FULFILLMENT_GROUP",
+              "dataType" : {
+                "type" : "Boolean"
+              }
+            } ]
+          },
+          "\"TABLES\"" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_TRANSIENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CLUSTERING_KEY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROW_COUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "RETENTION_TIME",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "SELF_REFERENCING_COLUMN_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "REFERENCE_GENERATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "USER_DEFINED_TYPE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "USER_DEFINED_TYPE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "USER_DEFINED_TYPE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_INSERTABLE_INTO",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_TYPED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMIT_ACTION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_DDL",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_DDL_BY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "AUTO_CLUSTERING_ON",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_TEMPORARY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_ICEBERG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_DYNAMIC",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_IMMUTABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "TABLE_STORAGE_METRICS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CLONE_GROUP_ID",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "IS_TRANSIENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ACTIVE_BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TIME_TRAVEL_BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FAILSAFE_BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "RETAINED_FOR_CLONE_BYTES",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "TABLE_CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "TABLE_DROPPED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "TABLE_ENTERED_FAILSAFE",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "CATALOG_CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "CATALOG_DROPPED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "SCHEMA_CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "SCHEMA_DROPPED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "CURRENT_PACKAGES_POLICY" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ALLOWLIST",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BLOCKLIST",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ADDITIONAL_CREATION_BLOCKLIST",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "OBJECT_PRIVILEGES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "GRANTOR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GRANTEE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PRIVILEGE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_GRANTABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "USAGE_PRIVILEGES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "GRANTOR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GRANTEE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "GRANTED_TO",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "OBJECT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PRIVILEGE_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_GRANTABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            } ]
+          },
+          "TABLE_CONSTRAINTS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "CONSTRAINT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONSTRAINT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_DEFERRABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INITIALLY_DEFERRED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ENFORCED",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "RELY",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "LOAD_HISTORY" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "SCHEMA_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LAST_LOAD_TIME",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "STATUS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ROW_COUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ROW_PARSED",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FIRST_ERROR_MESSAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FIRST_ERROR_LINE_NUMBER",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FIRST_ERROR_CHARACTER_POSITION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FIRST_ERROR_COL_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ERROR_COUNT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "ERROR_LIMIT",
+              "dataType" : {
+                "type" : "Number"
+              }
+            } ]
+          },
+          "EXTERNAL_TABLES" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "TABLE_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TABLE_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_DDL",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_DDL_BY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "LOCATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_FORMAT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_FORMAT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "FUNCTIONS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "FUNCTION_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ARGUMENT_SIGNATURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "DATA_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CHARACTER_MAXIMUM_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "CHARACTER_OCTET_LENGTH",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_PRECISION_RADIX",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "NUMERIC_SCALE",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "FUNCTION_LANGUAGE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FUNCTION_DEFINITION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "VOLATILITY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_NULL_CALL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_SECURE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_EXTERNAL",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "API_INTEGRATION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CONTEXT_HEADERS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "MAX_BATCH_ROWS",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "REQUEST_TRANSLATOR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "RESPONSE_TRANSLATOR",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMPRESSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IMPORTS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "HANDLER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TARGET_PATH",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "RUNTIME_VERSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "PACKAGES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "INSTALLED_PACKAGES",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_MEMOIZABLE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "EXTERNAL_ACCESS_INTEGRATIONS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SECRETS",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_DATA_METRIC",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "IS_AGGREGATE",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          },
+          "FILE_FORMATS" : {
+            "entityType" : "VIEW",
+            "providerType" : "Snowflake",
+            "fields" : [ {
+              "name" : "FILE_FORMAT_CATALOG",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_FORMAT_SCHEMA",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_FORMAT_NAME",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_FORMAT_OWNER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FILE_FORMAT_TYPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "RECORD_DELIMITER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FIELD_DELIMITER",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "SKIP_HEADER",
+              "dataType" : {
+                "type" : "Number"
+              }
+            }, {
+              "name" : "DATE_FORMAT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TIME_FORMAT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TIMESTAMP_FORMAT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "BINARY_FORMAT",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ESCAPE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ESCAPE_UNENCLOSED_FIELD",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "TRIM_SPACE",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "FIELD_OPTIONALLY_ENCLOSED_BY",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "NULL_IF",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "COMPRESSION",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "ERROR_ON_COLUMN_COUNT_MISMATCH",
+              "dataType" : {
+                "type" : "String"
+              }
+            }, {
+              "name" : "CREATED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "LAST_ALTERED",
+              "dataType" : {
+                "type" : "Timestamp"
+              }
+            }, {
+              "name" : "COMMENT",
+              "dataType" : {
+                "type" : "String"
+              }
+            } ]
+          }
+        }
+      }, {
+        "type" : "Schema",
+        "name" : "PUBLIC",
+        "children" : [ ]
+      } ]
+    }, {
+      "type" : "Database",
+      "name" : "DEV_FINANCE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "DEV_RETAIL",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "JSR",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "KNOEMA_ECONOMY_DATA_ATLAS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "MACIEJ_DQ",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "MEITEST",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "NTONG",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "PC_DBT_DB",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "PROD_RETAIL",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "PROPHECYQ",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "RAW",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "RETAIL",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SALESCYCLE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SAMPLE_DATA",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SF_TUTS",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SNOWFLAKE",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "SNOWFLAKE_SAMPLE_DATA",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "STG_RETAIL",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "TESTDB",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "TPCH",
+      "children" : [ ]
+    }, {
+      "type" : "Database",
+      "name" : "VALIDATED",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : { }
+  },
+  "entitiesToSync" : [ {
+    "name" : "orders",
+    "type" : "Model",
+    "syncedOnce" : false
+  } ],
+  "frontEndLanguage" : "sql"
+}
