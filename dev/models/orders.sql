@@ -39,7 +39,7 @@ order_payments AS (
       END) AS {{payment_method}}_amount,
     {% endfor %}
     
-    sum(amount) AS total_amount
+    sum(amount2) AS total_amount
   
   FROM renamed_1 AS payments
   
