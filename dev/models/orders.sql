@@ -62,7 +62,7 @@ final AS (
   
   FROM renamed AS orders
   LEFT JOIN order_payments
-     ON orders.order_id = order_payments.order_id
+     ON orders.order_id = order_payments.order_id2
 
 )
 
