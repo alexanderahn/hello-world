@@ -15,110 +15,8 @@
     "version" : 3
   },
   "processes" : {
-    "raw_orders##fz0FzCKI" : {
-      "id" : "raw_orders##fz0FzCKI",
-      "component" : "Seed",
-      "metadata" : {
-        "label" : "raw_orders",
-        "phase" : 0,
-        "isLabelGrayed" : false
-      },
-      "properties" : {
-        "table" : {
-          "name" : "raw_orders",
-          "sourceType" : "Seed"
-        }
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "gmyTDxgZ",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "index" : 3
-    },
-    "final##HVtl5oec" : {
-      "id" : "final##HVtl5oec",
-      "component" : "TargetModel",
-      "metadata" : {
-        "label" : "orders",
-        "phase" : 0,
-        "isLabelGrayed" : false
-      },
-      "properties" : {
-        "customQueryDisabled" : true,
-        "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "SELECT *\n\nFROM final\n",
-        "incrementalKey" : false,
-        "incremental" : {
-          "expression" : "true"
-        }
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "KjdkG5IL",
-          "slug" : "final"
-        } ],
-        "outputs" : [ {
-          "id" : "ACgYc05G",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "index" : 6
-    },
-    "renamed##PrPZit6R" : {
-      "id" : "renamed##PrPZit6R",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "renamed",
-        "phase" : 0,
-        "macroDependencies" : [ ],
-        "isLabelGrayed" : false
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ {
-          "expression" : {
-            "expression" : "id"
-          },
-          "alias" : "order_id"
-        }, {
-          "expression" : {
-            "expression" : "user_id"
-          },
-          "alias" : "customer_id"
-        }, {
-          "expression" : {
-            "expression" : "order_date"
-          }
-        }, {
-          "expression" : {
-            "expression" : "status"
-          }
-        } ]
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "NlISrI48",
-          "slug" : "source"
-        } ],
-        "outputs" : [ {
-          "id" : "m2t8IMvp",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "index" : 4
-    },
-    "raw_payments##lgboiUyD" : {
-      "id" : "raw_payments##lgboiUyD",
+    "raw_payments##Pt1hU1d0" : {
+      "id" : "raw_payments##Pt1hU1d0",
       "component" : "Seed",
       "metadata" : {
         "label" : "raw_payments",
@@ -134,7 +32,7 @@
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "KvC8ooNv",
+          "id" : "R3RUoepd",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -142,8 +40,33 @@
       },
       "index" : 0
     },
-    "order_payments_1##STjUfPcA" : {
-      "id" : "order_payments_1##STjUfPcA",
+    "raw_orders##jkUVQfIB" : {
+      "id" : "raw_orders##jkUVQfIB",
+      "component" : "Seed",
+      "metadata" : {
+        "label" : "raw_orders",
+        "phase" : 0,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "table" : {
+          "name" : "raw_orders",
+          "sourceType" : "Seed"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ZE4l6tOy",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 3
+    },
+    "order_payments_1##XdCUBcYP" : {
+      "id" : "order_payments_1##XdCUBcYP",
       "component" : "Aggregate",
       "metadata" : {
         "label" : "order_payments_1",
@@ -190,11 +113,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "SMyHkrWb",
+          "id" : "EkKvnI7O",
           "slug" : "payments"
         } ],
         "outputs" : [ {
-          "id" : "YAzoM1kd",
+          "id" : "SmTzwxvL",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -202,8 +125,8 @@
       },
       "index" : 2
     },
-    "renamed_2##XMFdctxJ" : {
-      "id" : "renamed_2##XMFdctxJ",
+    "renamed_2##myBfsmBu" : {
+      "id" : "renamed_2##myBfsmBu",
       "component" : "Reformat",
       "metadata" : {
         "label" : "renamed_2",
@@ -237,11 +160,11 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "lq5Wyvl2",
+          "id" : "dhueSY9U",
           "slug" : "source"
         } ],
         "outputs" : [ {
-          "id" : "RugpzUfT",
+          "id" : "CxxBy6TW",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -249,8 +172,85 @@
       },
       "index" : 1
     },
-    "final##zSgIg3x5" : {
-      "id" : "final##zSgIg3x5",
+    "renamed##d1Z6jVdc" : {
+      "id" : "renamed##d1Z6jVdc",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "renamed",
+        "phase" : 0,
+        "macroDependencies" : [ ],
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "expression" : {
+            "expression" : "id"
+          },
+          "alias" : "order_id"
+        }, {
+          "expression" : {
+            "expression" : "user_id"
+          },
+          "alias" : "customer_id"
+        }, {
+          "expression" : {
+            "expression" : "order_date"
+          }
+        }, {
+          "expression" : {
+            "expression" : "status"
+          }
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "WHlVPumy",
+          "slug" : "source"
+        } ],
+        "outputs" : [ {
+          "id" : "XJbnVpkX",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 4
+    },
+    "final##SqHTUdR3" : {
+      "id" : "final##SqHTUdR3",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "orders",
+        "phase" : 0,
+        "isLabelGrayed" : false
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "SELECT *\n\nFROM final\n",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "qcgvjPNl",
+          "slug" : "final"
+        } ],
+        "outputs" : [ {
+          "id" : "Io4WdD8f",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "index" : 6
+    },
+    "final##flchI5vY" : {
+      "id" : "final##flchI5vY",
       "component" : "Join",
       "metadata" : {
         "label" : "final",
@@ -269,7 +269,7 @@
         "allowSelection" : false,
         "expressions" : [ {
           "expression" : {
-            "expression" : "orders.order_id_3"
+            "expression" : "orders.order_id"
           }
         }, {
           "expression" : {
@@ -298,7 +298,7 @@
           } ]
         }, {
           "expression" : {
-            "expression" : "order_payments.total_amount"
+            "expression" : "order_payments.total_amount5"
           },
           "alias" : "amount"
         } ],
@@ -308,14 +308,14 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "wYhvnVCF",
+          "id" : "ud9Ib4Jh",
           "slug" : "orders"
         }, {
-          "id" : "HAUeEUBi",
+          "id" : "O4iOiqu5",
           "slug" : "order_payments"
         } ],
         "outputs" : [ {
-          "id" : "gXuAewtm",
+          "id" : "q2LyVi8y",
           "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
@@ -325,41 +325,41 @@
     }
   },
   "connections" : [ {
-    "id" : "Ye7C8ZVN",
-    "source" : "raw_payments##lgboiUyD",
-    "sourcePort" : "KvC8ooNv",
-    "target" : "renamed_2##XMFdctxJ",
-    "targetPort" : "lq5Wyvl2"
+    "id" : "QUS2eZ4i",
+    "source" : "raw_payments##Pt1hU1d0",
+    "sourcePort" : "R3RUoepd",
+    "target" : "renamed_2##myBfsmBu",
+    "targetPort" : "dhueSY9U"
   }, {
-    "id" : "ZaEC3FiO",
-    "source" : "renamed_2##XMFdctxJ",
-    "sourcePort" : "RugpzUfT",
-    "target" : "order_payments_1##STjUfPcA",
-    "targetPort" : "SMyHkrWb"
+    "id" : "aI27dVx2",
+    "source" : "renamed_2##myBfsmBu",
+    "sourcePort" : "CxxBy6TW",
+    "target" : "order_payments_1##XdCUBcYP",
+    "targetPort" : "EkKvnI7O"
   }, {
-    "id" : "cIrvC2tn",
-    "source" : "raw_orders##fz0FzCKI",
-    "sourcePort" : "gmyTDxgZ",
-    "target" : "renamed##PrPZit6R",
-    "targetPort" : "NlISrI48"
+    "id" : "fP5oxYkX",
+    "source" : "raw_orders##jkUVQfIB",
+    "sourcePort" : "ZE4l6tOy",
+    "target" : "renamed##d1Z6jVdc",
+    "targetPort" : "WHlVPumy"
   }, {
-    "id" : "wtaHEitw",
-    "source" : "renamed##PrPZit6R",
-    "sourcePort" : "m2t8IMvp",
-    "target" : "final##zSgIg3x5",
-    "targetPort" : "wYhvnVCF"
+    "id" : "MsvuZdav",
+    "source" : "renamed##d1Z6jVdc",
+    "sourcePort" : "XJbnVpkX",
+    "target" : "final##flchI5vY",
+    "targetPort" : "ud9Ib4Jh"
   }, {
-    "id" : "Bo9euIHs",
-    "source" : "order_payments_1##STjUfPcA",
-    "sourcePort" : "YAzoM1kd",
-    "target" : "final##zSgIg3x5",
-    "targetPort" : "HAUeEUBi"
+    "id" : "oZxrT0It",
+    "source" : "order_payments_1##XdCUBcYP",
+    "sourcePort" : "SmTzwxvL",
+    "target" : "final##flchI5vY",
+    "targetPort" : "O4iOiqu5"
   }, {
-    "id" : "uJVMJXtY",
-    "source" : "final##zSgIg3x5",
-    "sourcePort" : "gXuAewtm",
-    "target" : "final##HVtl5oec",
-    "targetPort" : "KjdkG5IL"
+    "id" : "QT1gVoaR",
+    "source" : "final##flchI5vY",
+    "sourcePort" : "q2LyVi8y",
+    "target" : "final##SqHTUdR3",
+    "targetPort" : "qcgvjPNl"
   } ],
   "component" : "Model"
 }

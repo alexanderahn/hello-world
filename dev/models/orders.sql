@@ -61,7 +61,7 @@ renamed AS (
 final AS (
 
   SELECT 
-    orders.order_id_3,
+    orders.order_id_2,
     orders.customer_id,
     orders.order_date,
     orders.status,
