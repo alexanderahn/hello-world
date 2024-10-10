@@ -6,28 +6,19 @@ WITH raw_payments AS (
 
 ),
 
-raw_orders AS (
-
-  SELECT * 
-  
-  FROM {{ ref('raw_orders')}}
-
-),
-
-renamed_1 AS (
+renamed_2 AS (
 
   SELECT 
-    id AS payment_id,
-    order_id,
-    payment_method,
-    -- `amount` is currently stored in cents, so we convert it to dollars
-    amount / 100 AS amount
+    id AS order_id,
+    order_id AS customer_id,
+    NULL AS order_date,
+    NULL AS status
   
   FROM raw_payments AS source
 
 ),
 
-order_payments AS (
+order_payments_1 AS (
 
   SELECT 
     order_id,
@@ -39,11 +30,31 @@ order_payments AS (
       END) AS {{payment_method}}_amount,
     {% endfor %}
     
-    sum(amount2) AS total_amount
+    sum(amount) AS total_amount
   
-  FROM renamed_1 AS payments
+  FROM renamed_2 AS payments
   
   GROUP BY order_id
+
+),
+
+raw_orders AS (
+
+  SELECT * 
+  
+  FROM {{ ref('raw_orders')}}
+
+),
+
+renamed AS (
+
+  SELECT 
+    id AS order_id,
+    user_id AS customer_id,
+    order_date,
+    status
+  
+  FROM raw_orders AS source
 
 ),
 
@@ -58,11 +69,11 @@ final AS (
       order_payments.{{payment_method}}_amount,
     {% endfor %}
     
-    order_payments.total_amount2 AS amount
+    order_payments.total_amount5 AS amount
   
   FROM renamed AS orders
-  LEFT JOIN order_payments
-     ON orders.order_id = order_payments.order_id2
+  LEFT JOIN order_payments_1 AS order_payments
+     ON orders.order_id = order_payments.order_id
 
 )
 

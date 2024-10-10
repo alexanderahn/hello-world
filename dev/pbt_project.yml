@@ -26,12 +26,22 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/customers:
     name: customers
-    schema: null
+    schema:
+      entityType: ''
+      providerType: Snowflake
+      fields:
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
+      - name: CUSTOMER_ID
+        dataType:
+          type: Number
     description: null
     author: alexahn@prophecy.io
     files:
     - models/customers.sql
     - .prophecy/ide/models/customers.json
+    - models/schema.yml
     sqlDependencies:
       models: []
       datasets: []

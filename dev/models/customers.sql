@@ -51,25 +51,26 @@ customer_orders AS (
 
 ),
 
-final AS (
+Join_1 AS (
 
+  {#Links customer IDs from two sources to identify common customers.#}
   SELECT 
-    customers.customer_id,
-    customers.first_name,
-    customers.last_name,
-    customer_orders.first_order,
-    customer_orders.most_recent_order,
-    customer_orders.number_of_orders,
-    customer_payments.total_amount AS customer_lifetime_value
+    in0.CUSTOMER_ID AS CUSTOMER_ID,
+    in1.CUSTOMER_ID AS CUSTOMER_ID
   
-  FROM renamed_1 AS customers
-  LEFT JOIN customer_orders
-     ON customers.customer_id = customer_orders.customer_id
-  LEFT JOIN customer_orders AS customer_payments
-     ON customers.customer_id = customer_payments.customer_id
+  FROM renamed_1 AS in0
+  INNER JOIN customer_orders AS in1
+
+),
+
+Deduplicate_1 AS (
+
+  SELECT DISTINCT *
+  
+  FROM Join_1 AS in0
 
 )
 
 SELECT *
 
-FROM final
+FROM Deduplicate_1

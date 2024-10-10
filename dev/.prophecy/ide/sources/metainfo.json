@@ -3420,9 +3420,9 @@
     "prophecyProjectDependencies" : { }
   },
   "entitiesToSync" : [ {
-    "name" : "orders",
+    "name" : "customers",
     "type" : "Model",
-    "syncedOnce" : false
+    "syncedOnce" : true
   } ],
   "frontEndLanguage" : "sql"
 }
