@@ -61,7 +61,7 @@ renamed AS (
 final AS (
 
   SELECT 
-    orders.order_id,
+    orders.order_id_2,
     orders.customer_id,
     orders.order_date,
     orders.status,
@@ -69,7 +69,7 @@ final AS (
       order_payments.{{payment_method}}_amount,
     {% endfor %}
     
-    order_payments.total_amount5 AS amount
+    order_payments.total_amount AS amount
   
   FROM renamed AS orders
   LEFT JOIN order_payments_1 AS order_payments
