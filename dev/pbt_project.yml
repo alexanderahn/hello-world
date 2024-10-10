@@ -41,25 +41,7 @@ sqlModels:
     createdAt: '2024-10-08 16:35:53'
   .prophecy/metadata/sqlmodels/orders:
     name: orders
-    schema:
-      entityType: ''
-      providerType: Snowflake
-      fields:
-      - name: ORDER_ID
-        dataType:
-          type: Number
-      - name: CUSTOMER_ID
-        dataType:
-          type: Number
-      - name: ORDER_DATE
-        dataType:
-          type: Date
-      - name: STATUS
-        dataType:
-          type: String
-      - name: AMOUNT
-        dataType:
-          type: Number
+    schema: null
     description: null
     author: alexahn@prophecy.io
     files:
