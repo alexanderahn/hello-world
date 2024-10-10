@@ -58,7 +58,7 @@ final AS (
       order_payments.{{payment_method}}_amount,
     {% endfor %}
     
-    order_payments.total_amount2 AS amount
+    order_payments.total_amount5 AS amount
   
   FROM renamed AS orders
   LEFT JOIN order_payments
